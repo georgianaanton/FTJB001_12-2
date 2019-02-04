@@ -1,6 +1,13 @@
 angular project
-    install @angular/cli
+    npm install -g @angular/cli
     ng version
     ng new project-name
     cd project-name
     ng server
+
+
+git clone https://github.com/java2786/FTJB001_12-2
+cd FTJB001_12-2
+cd ng-app
+npm install // where you have your package.json
+npm start
