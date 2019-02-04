@@ -3,7 +3,7 @@ angular project
     ng version
     ng new project-name
     cd project-name
-    ng server
+    ng serve
 
 
 git clone https://github.com/java2786/FTJB001_12-2
