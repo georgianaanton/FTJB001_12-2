@@ -1,0 +1,6 @@
+angular project
+    install @angular/cli
+    ng version
+    ng new project-name
+    cd project-name
+    ng server
