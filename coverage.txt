@@ -11,3 +11,14 @@ cd FTJB001_12-2
 cd ng-app
 npm install // where you have your package.json
 npm start
+
+
+bootstrap
+local image
+events
+databinding
+parent-child
+child-content
+
+component encapsulation
+    styles
