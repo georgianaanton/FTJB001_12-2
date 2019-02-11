@@ -22,3 +22,6 @@ child-content
 
 component encapsulation
     styles
+
+directives
+    *ngIf, *ngFor
