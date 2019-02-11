@@ -5,7 +5,8 @@ import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 // import {AppModule} from "./04-templateVstemplateUrl/app.module";
 // import {AppModule} from "./05-bootstrap/app.module";
 // import {AppModule} from "./06-badge/app.module";
-import {AppModule} from "./07-events/app.module";
+// import {AppModule} from "./07-events/app.module";
+import {AppModule} from "./08-databindings/app.module";
 
 
 platformBrowserDynamic().bootstrapModule(AppModule)

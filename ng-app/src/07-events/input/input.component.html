@@ -1,8 +1,8 @@
 <div>
 
-  Enter your age: <input type="number" #ageBox (keyup)="getCurrentAge(ageBox)">
+  Enter your age: <input type="text" #box (keyup)="getCurrentAge(box)">
 <br/>
-Current value: {{ageBox.value}}<br/>
+Current value: {{box.value}}<br/>
 Current age value: {{age}}<br/>
 
 </div>

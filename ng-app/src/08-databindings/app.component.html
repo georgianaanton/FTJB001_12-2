@@ -1,0 +1,23 @@
+<ol>
+    <li>String Interpolation
+        <br/>
+        Title value is : {{title}}
+    </li>
+    <li>Property Binding<br/>
+        <input type="text" value="{{title}}" /><br/>
+        <input type="text" [value]="title" /><br/>
+        <button class="btn btn-success btn-lg" disabled="{{invalid}}">Submit</button>
+        <button class="btn btn-success btn-lg" [disabled]="invalid">Submit</button>
+    </li>
+    <li>Event Binding<br/>
+        <i>{{invalid}}</i>
+        <button class="btn btn-success btn-lg" (click)="reverse()">Change</button>
+    </li>
+    <li>2way Binding
+        <br/>
+        <input type="text" class="form-control" [value]="name" #currentObject (keyup)="changeName(currentObject.value)"/><br/>
+        <br/>
+        <input type="text" class="form-control" [(ngModel)]="name"/><br/>
+        Friend's Name is : <b>{{name}}</b>
+    </li>
+</ol>
