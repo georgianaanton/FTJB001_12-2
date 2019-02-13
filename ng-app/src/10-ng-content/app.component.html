@@ -1,6 +1,6 @@
-<app-badge>
+<app-badge (click)="increaseNotifications()">
     <button type="button" class="btn btn-success">
-        Notifications <span class="badge badge-light">10</span>
+        Notifications <span class="badge badge-light">{{notificationCount}}</span>
     </button>
 </app-badge>
 <app-badge>
