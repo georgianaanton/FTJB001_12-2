@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -9,12 +9,20 @@ export class ChildComponent implements OnInit {
 
   @Input("name") 
   pName:string;
-  
+
   @Input() pAge:number;
   @Input() pAddress:string;
+
+  @Output()
+  pEvent:EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changePName(name){
+    this.pEvent.next(name);
   }
 
 }

@@ -5,6 +5,6 @@
     Enter age: <input type="number" #ageBox [value]="age" (change)="changeAge(ageBox.value)"><br/>
     Your age: {{age}}<br/>
     <hr/>
-  <app-child [name]="name" [pAge]="age" [pAddress]="'delhi'"></app-child>
+  <app-child [name]="name" [pAge]="age" [pAddress]="'delhi'" (pEvent)="handleChangePNameInParentComp($event)"></app-child>
   
 </div>
