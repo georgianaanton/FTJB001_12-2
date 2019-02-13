@@ -22,7 +22,7 @@ export class ChildComponent implements OnInit {
   }
 
   changePName(name){
-    this.pEvent.next(name);
+    this.pEvent.next({name: name, age: 33});
   }
 
 }

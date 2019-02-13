@@ -21,8 +21,8 @@ export class ParentComponent implements OnInit {
     this.age = age;
   }
   handleChangePNameInParentComp(arg){
-    console.log("change in parent")
-    this.name = arg;
+    console.log("change in parent", arg.age)
+    this.name = arg.name;
   }
 
 
