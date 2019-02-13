@@ -1,0 +1,10 @@
+<div>
+    <h1>ParentComponent</h1>
+    Enter name: <input type="text" #box [value]="name" (keyup)="changeName(box.value)"><br/>
+    Your name: {{name}}<br/>
+    Enter age: <input type="number" #ageBox [value]="age" (change)="changeAge(ageBox.value)"><br/>
+    Your age: {{age}}<br/>
+    <hr/>
+  <app-child [name]="name" [pAge]="age" [pAddress]="'delhi'"></app-child>
+  
+</div>
