@@ -9,7 +9,8 @@ import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 // import {AppModule} from "./08-databindings/app.module";
 // import {AppModule} from "./09-parent-child/app.module";
 // import {AppModule} from "./10-ng-content/app.module";
-import {AppModule} from "./11-encapsulation/app.module";
+// import {AppModule} from "./11-encapsulation/app.module";
+import {AppModule} from "./12-animation/app.module";
 
 
 platformBrowserDynamic().bootstrapModule(AppModule)
