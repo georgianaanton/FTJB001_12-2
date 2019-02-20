@@ -21,7 +21,7 @@ lib-cov
 /**/pids
 /**/logs
 /**/results
-
+/**/Assignments
 
 /**/npm-debug.log
 /**/.brackets.json
