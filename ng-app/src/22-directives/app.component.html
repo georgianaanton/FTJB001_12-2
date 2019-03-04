@@ -1,0 +1,54 @@
+<h1 style="text-align: center" class="text-primary">Directives</h1>
+<hr/>
+<button (click)="toggleIsPresent()">ToggleIsPresent : {{isPresent}}</button>
+<ul>
+    <li [ngClass]="'red'">First</li>
+    <li [ngClass]="myClass">Second</li>
+    <li [ngClass]="{'red':isPresent}">third</li>
+    <li [ngClass]="{'red':isPresent}">third</li>
+    <li [ngClass]="myClassObj">Four</li>
+
+    <li [ngStyle]="myStyleObj">Fifth</li>
+    <li [ngStyle]="isPresent?{'color':'darkseagreen'}:{'color':'cornflowerblue'}">Sixth</li>
+    <li [ngClass]="{'red':exp>2}">Employee</li>
+    <li><button [disabled]="!isPresent" (click)="log()">Button</button></li>
+</ul>
+
+
+<h2>Struct Directives</h2>
+<div class="table-responsive">
+    <table class="table" *ngIf="isPresent">
+        <tr>
+            <td>S.No</td>
+            <td>Emp Id</td>
+            <td>Emp Name</td>
+            <td>Emp Age</td>
+        </tr>
+        <tr *ngFor="let emp of empList;let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{emp.empId}}</td>
+            <td>{{emp.empName}}</td>
+            <td>{{emp.empAge}}</td>
+        </tr>
+    </table>
+
+    <p *ngIf="!isPresent">Employee list is empty</p>
+    
+
+</div>
+
+<hr/>
+<button (click)="toggleIsPresent()">ToggleIsPresent</button>
+
+<span>isPresent: {{isPresent}}</span> 
+ |
+<span>Toss : {{toss}}</span>
+<p>Angular Switch</p>
+
+<div [ngSwitch]="toss">
+    <h3 *ngSwitchCase="'head'">It is head</h3>
+    <h3 *ngSwitchCase="'tail'">It is tail</h3>
+    <h3 *ngSwitchDefault>It is default value</h3>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

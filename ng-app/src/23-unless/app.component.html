@@ -1,0 +1,7 @@
+<h1 style="text-align: center" class="text-primary">Directives</h1>
+<hr/>
+<button (click)="toggleIsPresent()">ToggleIsPresent : {{isPresent}}</button>
+
+<h3 *ngIf="isPresent">isPresent value is true</h3>
+
+<h3 *unless="isPresent">isPresent value is false: with unless directive</h3>
