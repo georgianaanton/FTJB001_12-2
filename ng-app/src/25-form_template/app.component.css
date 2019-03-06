@@ -1,0 +1,10 @@
+.redBorder{
+    border: 2px solid red;
+}
+
+input.ng-valid.ng-dirty{
+    border: 2px solid green;
+}
+input.ng-invalid.ng-dirty{
+    border: 2px solid red;
+}
