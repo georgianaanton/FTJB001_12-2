@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +17,9 @@ export class AppComponent {
     console.log(this.user);
     // ajax req 
     this.user = {}
-    
-  }
 
+    // https://angular.io/api/forms/AbstractControl#!#markAsDirty-anchor
+    myForm.controls.username.markAsPristine()
+  }
+  
 }
