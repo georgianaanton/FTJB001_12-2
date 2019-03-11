@@ -1,0 +1,14 @@
+<div>
+    <h3>Panel Component</h3>
+    <ul>
+            <li *ngFor="let date of dates">{{date | date:'long'}}</li>
+        </ul>
+
+    <!-- <app-badge></app-badge> -->
+    <app-badge [count]="counter" [dates]="dates"></app-badge>
+
+    <button class="btn btn-success" (click)="update()">Update</button>
+    <button class="btn btn-primary" (click)="addDate()">Add Date</button>
+
+</div>
+
