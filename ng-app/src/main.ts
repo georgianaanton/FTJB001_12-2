@@ -24,7 +24,8 @@ import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 // import {AppModule} from "./24-pipe/app.module";
 // import {AppModule} from "./25-form_template/app.module";
 // import {AppModule} from "./26-form_data/app.module";
-import {AppModule} from "./27-lifeCycle/app.module"; 
+// import {AppModule} from "./27-lifeCycle/app.module"; 
+import {AppModule} from "./28-testing/app.module"; 
 
 
 platformBrowserDynamic().bootstrapModule(AppModule)
