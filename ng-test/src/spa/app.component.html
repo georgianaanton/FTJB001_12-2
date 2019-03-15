@@ -1,0 +1,11 @@
+<h1 class="text-center text-primary">{{title}}</h1>
+
+<hr/>
+<a [routerLink]="['home']">HOME</a> |
+<a [routerLink]="['login']">LOGIN</a> |
+<button class="btn btn-secondary" (click)="goToHome()">HOME BUTTON</button> |
+<button class="btn btn-secondary" (click)="goToLogin()">LOGIN BUTTON</button> |
+
+<hr/>
+
+<router-outlet></router-outlet>

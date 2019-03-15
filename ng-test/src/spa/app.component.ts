@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  num:number = 2;
+  
   title = "Hello Angular Testing";
 
-  changeTitle(){
-    console.log("btn clicked")
-    this.title = "Welcome Angular Testing";
-  }
+  constructor(private router:Router){}
 
-  myLog(arg?:any){
-    console.log("My Log : ", arg);
+  goToHome(){
+    this.router.navigate(['/', 'home']);
+  }
+  goToLogin(){
+    this.router.navigate(['/', 'login']);
   }
 
 }
