@@ -1,0 +1,22 @@
+<h1 class="text-center text-primary">All Tasks</h1>
+
+<div class="table-responsive">
+  <table class="table">
+    <tr>
+      <td>Task</td>
+      <td>Parent</td>
+      <td>Priority</td>
+      <td>Start Date</td>
+      <td>End Date</td>
+      <td>Finished</td>
+    </tr>
+    <tr *ngFor="let task of tasks">
+      <td>{{task.task}}</td>
+      <td>{{task.parent_id}}</td>
+      <td>{{task.priority}}</td>
+      <td>{{task.start_date | date}}</td>
+      <td>{{task.end_date | date:'dd-MM-yyyy'}}</td>
+      <td>{{task.finished}}</td>
+    </tr>
+  </table>
+</div>
