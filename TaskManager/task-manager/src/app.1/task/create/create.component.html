@@ -9,28 +9,6 @@
             <input type="text" class="form-control" id="task" placeholder="Task" name="task" [(ngModel)]="task.task">
           </div>
         </div>
-
-        
-        <div class="form-group row">
-          <label for="task" class="col-sm-2 col-form-label">Parent</label>
-          <div class="col-sm-10">
-
-            <!-- <input type="text" class="form-control" id="task" placeholder="Task" name="task" [(ngModel)]="task.task"> -->
-            <ng-template #rt let-r="result" let-t="term">
-                <!-- <img [src]="'https://upload.wikimedia.org/wikipedia/commons/thumb/' + r['flag']" class="mr-1" style="width: 16px"> -->
-                <ngb-highlight [result]="r.task" [term]="t"></ngb-highlight>
-              </ng-template>
-              
-              <label for="typeahead-template">Search for a parent:</label>
-              <input id="typeahead-template" type="text" class="form-control" name="selectedParent" [(ngModel)]="selectedParent" [ngbTypeahead]="search" [resultTemplate]="rt"
-                [inputFormatter]="formatter" />
-              <hr>
-
-          </div>
-        </div>
-
-
-
         <div class="form-group row">
           <label for="priority" class="col-sm-2 col-form-label">Priority</label>
           <label class="col-sm-1" for="">0</label>
@@ -46,14 +24,14 @@
             <label for="start_date" class="col-sm-2 col-form-label">Start Date</label>
             <div class="col-sm-10">
               <!-- <input type="text" class="form-control" id="start_date" placeholder="MM-dd-yyyy" name="task" [(ngModel)]="task.start_date"> -->
-              <input type="text" class="form-control" ngbDatepicker [(ngModel)]="task.start_date" placeholder="select start date" name="startdate" id="startdate" #startdate="ngbDatepicker" (focus)="startdate.open()"/>
+              <input type="text" class="form-control" id="start_date" placeholder="yyyy-MM-dd" name="task" [(ngModel)]="task.start_date">
             </div>
           </div>
         <div class="form-group row">
             <label for="end_date" class="col-sm-2 col-form-label">End Date</label>
             <div class="col-sm-10">
               <!-- <input type="text" class="form-control" id="end_date" placeholder="MM-dd-yyyy" name="task" [(ngModel)]="task.end_date"> -->
-              <input type="text" class="form-control" ngbDatepicker [(ngModel)]="task.end_date" placeholder="Select end date" name="enddate" id="enddate" #enddate="ngbDatepicker" (focus)="enddate.open()"/>
+              <input type="text" class="form-control" id="end_date" placeholder="yyyy-MM-dd" name="task" [(ngModel)]="task.end_date">
             </div>
           </div>
         <div class="form-group row">

@@ -9,19 +9,14 @@ import { CreateComponent } from './task/create/create.component';
 import { ViewComponent } from './task/view/view.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { GetTaskPipe } from './task/get-task.pipe';
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CreateComponent,
-    ViewComponent,
-    GetTaskPipe
+    ViewComponent
   ],
   imports: [
-    NgbModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,

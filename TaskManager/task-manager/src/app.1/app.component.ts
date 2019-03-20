@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'task-manager';
-
-  // date;
-
-  // getDate(selectedDate){
-  //   console.log(selectedDate)
-  //   console.log(selectedDate._model)
-  //   console.log(this.date)
-  // }
 }
