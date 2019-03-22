@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events Demo</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+</head>
+<body>
+    <div id="app"></div>
+    
+    <script  type="text/babel">
+        class MyApp extends React.Component {
+            handleClick(){
+                console.log("Clicked...");
+            }
+            handleMouseOver(){
+                console.log("mouse hover...")
+            }
+            handleChange(event){
+                // console.log("value changed");
+                console.log(event.target.value);
+            }
+            render(){
+                return (
+                    <div>
+                        Random Value = {Math.floor(Math.random()*10)}
+                        <button onClick={function(){console.log("Hello js")}}>ClickMe</button>
+                        <button onClick={this.handleClick}>HandleClick</button>
+                        <button onMouseOver={this.handleMouseOver}>HoverMe</button>
+
+                        <hr/>
+
+                        <input onChange={this.handleChange} placeholder="Enter your name"/>
+
+                    </div>
+                )
+                    
+            }
+        }
+
+        ReactDOM.render(
+            React.createElement(MyApp, null),
+            document.getElementById("app")
+        )
+    </script>
+</body>
+</html>
