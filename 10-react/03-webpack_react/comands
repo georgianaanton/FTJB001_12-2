@@ -17,3 +17,7 @@ index.js -> main
 
 npm run compile
 npm run dev
+
+
+for css
+npm i -D css-loader style-loader
