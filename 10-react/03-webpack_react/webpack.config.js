@@ -2,7 +2,7 @@
 const config = {
     "entry": __dirname + "/src/index.js",
     "output": {
-        "path": __dirname + "/dist",
+        "path": __dirname + "/output",
         "filename": "bundle.js"
     },
     "module": {
@@ -15,7 +15,7 @@ const config = {
         ]
     },
     "devServer": {
-        "contentBase": "./dist"
+        "contentBase": "./output"
     }
 
 }
