@@ -1,0 +1,19 @@
+webpack 
+    npm i --save-dev webpack webpack-dev-server webpack-cli
+
+webpack.config.js
+
+npm run compile
+npm run dev
+
+babel
+    npm i --save-dev @babel/core @babel/preset-env babel-loader @babel/preset-react
+
+    .babelrc
+
+npm i react react-dom
+
+index.js -> main
+
+npm run compile
+npm run dev
