@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './Person';
+import './../node_modules/bootstrap-css-only/css/bootstrap.css';
+import Dropdown from './Dropdown';
 
 class App extends Component {
 
+  state = {
+    "countries": ["India", "Japan", "USA"],
+    "title": "Select Your Country"
+  }
+
   render() {
-    const date = new Date();
+
     return (
-      <div className="App">
-        {/* <h1>This is basic react app</h1>
-        <p>Today: {date.getFullYear()}</p>
-        <hr/> */}
-        <Person email="test@gamil.com" />
-        <hr id="firstHr"/>
+      <div className="App container">
+        <h1>React Dropdown Demo</h1>
+        <Dropdown title={this.state.title} countries={this.state.countries} />
       </div>
     );
   }
