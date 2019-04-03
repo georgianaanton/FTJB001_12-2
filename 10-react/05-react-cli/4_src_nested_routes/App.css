@@ -1,0 +1,7 @@
+/* @import "./../node_modules/bootstrap-css-only/css/bootstrap.css"; */
+
+.App h1{
+    border: 1px solid darkolivegreen;
+    border-radius: 15px;
+    margin: 10px;
+}
