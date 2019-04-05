@@ -2,55 +2,40 @@ import React, { Component } from 'react';
 import './Home.css';
 import { Link } from "react-router-dom";
 
-import UserStore from './../stores/UserStore';
-
-import AddUserForm from './AddUserForm'
-
-// import {createUser, deleteUser} from './../actions/UserActions';
-import * as UserActions from './../actions/UserActions';
 
 class Home extends Component {
   state = {
-      users: UserStore.getAllUsers()
+      users: [
+        {name: 'admin', password: 'admin', role:'admin'},
+        {name: 'user1', password: 'user', role:'user'}
+    ]
   }
 
   constructor(props){
     super(props);
-    
-  }
-  componentWillMount(){
-    // console.log(this.props);
-    UserStore.on('change', this.getUsers)
   }
 
-  componentWillUnmount(){
-    UserStore.removeListener('change', this.getUsers)
-  }
-
-  getUsers= ()=>{
+  addUser = ()=>{
     this.setState({
-      users: UserStore.getAllUsers()
+      users: [
+        {name: 'admin', password: 'admin', role:'admin'},
+        {name: 'user1', password: 'user', role:'user'},
+        {name: 'user2', password: 'user', role:'user'}
+      ]
     })
   }
 
-  createUser = (newUser)=>{
-    let randomNum = Math.floor(Math.random()*1000);
-    let user = {
-      name: newUser.name,
-      password: 'abc',
-      role: randomNum %2 === 0 ? 'user':'admin'
-    }
-
-    UserActions.createUser(user);
+  componentDidUpdate(prevProps, prevState){
+    console.log("Previous props were ", prevProps)
+    console.log("Previous state were ", prevState)
   }
 
-  // formSumitted =(user)=>{}
+  
     render() {
         return (
           <div className="home">
             <h4 id="head" className="text-center">Home Page</h4>
-            <button className="btn btn-success" onClick={this.createUser}>Add User</button>
-            <AddUserForm handleSubmit={this.createUser}/>
+<button onClick={this.addUser} className="btn btn-danger">Add</button>
             <div className="table-responsive">
             <table className="table">
               <thead>

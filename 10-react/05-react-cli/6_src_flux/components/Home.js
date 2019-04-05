@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 import UserStore from './../stores/UserStore';
 
-import AddUserForm from './AddUserForm'
-
 // import {createUser, deleteUser} from './../actions/UserActions';
 import * as UserActions from './../actions/UserActions';
 
@@ -33,10 +31,10 @@ class Home extends Component {
     })
   }
 
-  createUser = (newUser)=>{
+  createUser = ()=>{
     let randomNum = Math.floor(Math.random()*1000);
     let user = {
-      name: newUser.name,
+      name: `User${randomNum}`,
       password: 'abc',
       role: randomNum %2 === 0 ? 'user':'admin'
     }
@@ -44,13 +42,12 @@ class Home extends Component {
     UserActions.createUser(user);
   }
 
-  // formSumitted =(user)=>{}
+  
     render() {
         return (
           <div className="home">
             <h4 id="head" className="text-center">Home Page</h4>
             <button className="btn btn-success" onClick={this.createUser}>Add User</button>
-            <AddUserForm handleSubmit={this.createUser}/>
             <div className="table-responsive">
             <table className="table">
               <thead>
