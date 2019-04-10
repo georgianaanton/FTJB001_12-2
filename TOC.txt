@@ -1,0 +1,23 @@
+	HTML, CSS, Bootstrapp
+	JavaScript
+	Jquery
+	Angular
+	React
+	
+	Spring Core, Spring MVC & Restful API		12
+	Spring Security & Caching
+	Spring Boot
+	Microservices
+
+	JPA and Hibernate							15
+	MySQL & MongoDB
+	Apigee
+	RabbitMQ
+
+	Maven										13
+	Git
+	Docker
+	Jenkins
+	Kubernetes
+	AWS											
+

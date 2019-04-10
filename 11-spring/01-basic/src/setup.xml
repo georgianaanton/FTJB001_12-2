@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="com.demo.dto.Person">
+    	<property name="name" value="Tom"></property>
+    	<property name="age" value="12"></property>
+    	<property name="address" value="Pune, India"></property>
+    </bean>
+
+     <bean id="emp" class="com.demo.dto.Employee" init-method="init" scope="prototype">
+    	<property name="name" value="Mark"></property>
+    	<property name="age" value="22"></property>
+    	<property name="address">
+    		<bean class="com.demo.dto.Address">
+    			<constructor-arg value ="Agra" />
+    			<constructor-arg value ="UP" />
+    			<constructor-arg value ="12345" />
+    		</bean>
+    	</property>
+    </bean>
+    
+
+<!--     
+       <bean id="emp" class="com.demo.dto.Employee" init-method="init" destroy-method="dest">
+    	<property name="name" value="Mark" />
+    	<property name="age" value="22" />
+    	<property name="address" ref="address" />
+    </bean>
+   
+ -->    
+    
+<!--     
+     <bean id="emp" class="com.demo.dto.Employee" scope="prototype" init-method="init" destroy-method="dest">
+    	<property name="name" value="Mark" />
+    	<property name="age" value="22" />
+    	<constructor-arg ref="address" />
+    </bean>
+   
+    		<bean id="address" class="com.demo.dto.Address">
+    			<constructor-arg value ="Tokyo" />
+    			<constructor-arg value ="Japan" />
+    			<constructor-arg value ="123456" />
+    		</bean>
+    
+ -->
+</beans>

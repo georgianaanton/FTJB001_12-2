@@ -1,7 +1,9 @@
-package com.demo;
+package com.test;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.demo.dto.Engine;
 
 public class S02_Setup_Context {
 	public static void main(String[] args) {

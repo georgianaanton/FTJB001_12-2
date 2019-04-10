@@ -1,8 +1,10 @@
-package com.demo;
+package com.test;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.FileSystemResource;
+
+import com.demo.dto.Engine;
 
 public class S01_Setup_Factory {
 	public static void main(String[] args) {
