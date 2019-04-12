@@ -10,8 +10,8 @@ public class E11_AutowireDemo {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-11-autowire.xml");
 		
-		Library librarian = context.getBean("library3", Library.class);
-		System.out.println(librarian);
+		Library library = context.getBean("library3", Library.class);
+		System.out.println(library);
 		
 		Book book = context.getBean(Book.class);
 //		System.out.println(book);

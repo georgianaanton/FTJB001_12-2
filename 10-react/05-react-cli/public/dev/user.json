@@ -1,0 +1,6 @@
+[
+    {"emp": {"name": "arun", "age":34, "phones":[123, 654,963]}},
+    {"emp": {"name": "vivek", "age":25, "phones":[458]}},
+    {"emp": {"name": "sesha", "age":21, "phones":[968, 9874]}}
+]
+

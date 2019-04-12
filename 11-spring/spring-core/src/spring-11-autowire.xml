@@ -27,6 +27,11 @@ http://www.springframework.org/schema/beans/spring-beans.xsd" >
 	</bean>
 	
 	<bean id="librarian" class ="com.dto.Person">
+		<property name="name" value="Cyrus" />
+		<property name="dob" value="28-05-1989" />
+	</bean>
+	
+	<bean id="librarian" class ="com.dto.Person">
 		<property name="name" value="Miley" />
 		<property name="dob" value="31-07-1986" />
 	</bean>

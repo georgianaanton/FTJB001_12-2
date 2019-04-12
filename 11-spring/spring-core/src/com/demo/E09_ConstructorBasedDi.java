@@ -13,9 +13,9 @@ public class E09_ConstructorBasedDi {
 		
 		Student bean = context.getBean("studentById", Student.class);
 		System.out.println(bean);
-		bean = context.getBean("studentByType", Student.class);
-		System.out.println(bean);
-		bean = context.getBean("studentCourseByIndex", Student.class);
-		System.out.println(bean);
+//		bean = context.getBean("studentByType", Student.class);
+//		System.out.println(bean);
+//		bean = context.getBean("studentCourseByIndex", Student.class);
+//		System.out.println(bean);
 	}
 }

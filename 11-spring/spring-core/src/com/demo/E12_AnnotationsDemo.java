@@ -12,8 +12,8 @@ public class E12_AnnotationsDemo {
 		((ConfigurableApplicationContext) context).registerShutdownHook();
 		Item bean = context.getBean("item", Item.class);
 		System.out.println(bean);
-		Item bean1 = context.getBean("item", Item.class);
-		System.out.println(bean1);
-		System.out.println(bean == bean1);
+//		Item bean1 = context.getBean("item", Item.class);
+//		System.out.println(bean1);
+//		System.out.println(bean == bean1);
 	}
 }

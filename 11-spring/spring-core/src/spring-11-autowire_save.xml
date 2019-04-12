@@ -38,6 +38,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd" >
 		<property name="name" value="Miley" />
 		<property name="dob" value="31-07-1986" />
 	</bean>
+	
 
 <!-- 3. autowire byConstructor -->
 <import resource="spring-11-convertDate.xml"/>

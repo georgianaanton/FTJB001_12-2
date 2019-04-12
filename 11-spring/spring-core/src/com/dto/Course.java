@@ -1,11 +1,11 @@
 package com.dto;
 
-import java.util.List;
+import java.util.Map;
 
 public class Course {
 	int admissionYear;
 	double fee;
-	List<String> subjects;
+	Map<Integer, String> subjects;
 
 	public Course() { }
 	
@@ -27,10 +27,10 @@ public class Course {
 	public void setFee(double fee) {
 		this.fee = fee;
 	}
-	public List<String> getSubjects() {
+	public Map<Integer, String> getSubjects() {
 		return subjects;
 	}
-	public void setSubjects(List<String> subjects) {
+	public void setSubjects(Map<Integer, String> subjects) {
 		this.subjects = subjects;
 	}
 	@Override

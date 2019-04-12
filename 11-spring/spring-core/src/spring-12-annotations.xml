@@ -16,6 +16,7 @@ http://www.springframework.org/schema/context/spring-context.xsd" >
 	<bean id="item" class="com.dto.Item">
 		<property name="name" value="Lenovo-k6-power" />
 		<property name="manufacturingDate" value="30-07-2017" />
+<!-- 		<property name="manufacturedCompany" ref="lenovo" /> -->
 	</bean>
 	
 	<bean id="lenovo" class="com.dto.Company">

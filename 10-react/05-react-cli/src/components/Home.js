@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
+
 import { Link } from "react-router-dom";
 
 import UserStore from './../stores/UserStore';
@@ -21,6 +22,12 @@ class Home extends Component {
   componentWillMount(){
     // console.log(this.props);
     UserStore.on('change', this.getUsers)
+
+    fetch('http://localhost:3000/dev/user.json')
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+  
   }
 
   componentWillUnmount(){
@@ -76,6 +83,13 @@ class Home extends Component {
             </table>
 
             </div>
+
+            <hr/><hr/><hr/><hr/>
+
+
+
+            <hr/><hr/><hr/><hr/>
+
           </div>
         );
 
